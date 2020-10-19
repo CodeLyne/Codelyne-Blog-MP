@@ -1,0 +1,93 @@
+/*****************************
+          Variables
+*****************************/
+:root {
+  /* colors */
+  --color-primary: #aa5c6c;
+  --color-secondary: #c28893;
+
+  --color-black: #1a1a1a;
+  --color-white: #ffffff;
+
+  /* font */
+  --font-stack-1: 'Philosopher', sans-serif;
+  --font-stack-2: 'Poppins', sans-serif;
+}
+
+/*****************************
+          CSS reset
+*****************************/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* 62.5% is approximately 10px */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font-stack-2);
+  font-size: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-stack-1);
+  font-weight: bold;
+}
+
+h1 { font-size: 4.8rem; }
+h2 { font-size: 4rem; }
+h3 { font-size: 3.2rem; }
+h4 { font-size: 2.4rem; }
+h5 { font-size: 1.6rem; }
+
+/*****************************
+          Header
+*****************************/
+.header__hero {
+  height: 50vh;
+  background-image: linear-gradient(to right, 
+    rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--color-white);
+}
+
+/*****************************
+          Main
+*****************************/
+.main {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.cover__img {
+  height: 60rem;
+  background: url(../images/toa-heftiba-ewpTmN9pQJM-unsplash.jpg) no-repeat top center/cover;
+}
+
+/*****************************
+          Responsiveness
+*****************************/
+@media (max-width: 736px) {
+  .content__vision {
+    margin-bottom: 3rem;
+  }
+
+  .content__aims p {
+    text-align: center;
+  }
+}
+
+@media(max-width: 414px) {
+  .cover__img { height: 40rem; }
+}
+  
