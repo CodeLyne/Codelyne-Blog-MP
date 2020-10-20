@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: "Philosopher", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  background-color: #fff;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.hero-image {
+  background: linear-gradient(rgba(44, 44, 44, 0.7), rgba(104, 103, 103, 0.7)),
+    url("../images/background.jpg") no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+  position: relative;
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  margin-top: 3rem;
+}
+.heroContents {
+  padding-top: 14rem;
+  text-align: center;
+  color: black;
+}
+
+.blogPosts {
+  margin-top: 3rem;
+}
+.beautyPosts {
+  margin-top: 3rem;
+}
+h3 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.card-body {
+  height: auto;
+}
+
+.col-sm-4 {
+  padding: 1rem;
+}
+img {
+  height: 100%;
+}
+h1 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* a {
+  color: #1a1a1a;
+} */
+a:hover {
+  color: #aa5c6c;
+  text-decoration: underline;
+}
+.footer-img {
+  vertical-align: middle;
+  border-style: none;
+  max-width: 100%;
+  max-height: 100px;
+}
+
+.socials {
+  overflow: hidden;
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 25px;
+  color: #fff;
+}
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+card-body {
+  height: auto;
+  -webkit-box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.5);
+}
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+.card-img {
+  height: 100%;
+}
+a.footer-link {
+  color: #fff;
+}
+.nav-link {
+  color: #1a1a1a;
+}
+.nav-link:active {
+  color: #aa5c6c;
+}
+@media (min-width: 768px) {
+  #navbar {
+    margin-left: 10rem;
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+}
+#subscribe {
+  background-color: #aa5c6c;
+}
+#footer-socials {
+  color: #fff;
+}
+.searchlinks a::after {
+  color: red;
+}
+.page-link {
+  color: #1a1a1a;
+  background-color: #c28894;
+  border: 1px solid #dee2e6;
+}
+#previous {
+  color: #fff;
+}
+#next {
+  color: #fff;
+  background-color: #c28894;
+}
+#subscribe-img {
+  max-height: 24px;
+}
+#img-overlay {
+  margin-top: 7rem;
+  color: #aa5c6c;
+}
+#pagination {
+  background-color: #fff;
+}
+.beauty-post-content {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.beauty-post-content h5 {
+  position: absolute;
+  bottom: 6rem;
+}
+.beauty-post-img-1 {
+  width: 100%;
+  height: 25rem;
+}
+.beauty-post-img-2 {
+  width: 100%;
+  height: 15rem;
+}
+.beauty-post-header {
+  color: #fff;
+}
+.card:hoover {
+  opacity: 0.6;
+}
+.card {
+  -webkit-box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.5);
+}

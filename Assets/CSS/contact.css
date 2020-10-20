@@ -1,0 +1,126 @@
+/*****************************
+          Variables
+*****************************/
+:root {
+  /* colors */
+  --color-primary: #aa5c6c;
+  --color-secondary: #c28893;
+
+  --color-black: #1a1a1a;
+  --color-white: #ffffff;
+
+  /* font */
+  --font-stack-1: 'Philosopher', sans-serif;
+  --font-stack-2: 'Poppins', sans-serif;
+}
+
+/*****************************
+          CSS reset
+*****************************/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* 62.5% is approximately 10px */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font-stack-2);
+  font-size: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-stack-1);
+  font-weight: bold;
+}
+
+h1 { font-size: 4.8rem; }
+h2 { font-size: 4rem; }
+h3 { font-size: 3.2rem; }
+h4 { font-size: 2.4rem; }
+h5 { font-size: 1.6rem; }
+
+/*****************************
+          Header
+*****************************/
+.header__hero {
+  height: 50vh;
+  background-image: linear-gradient(to right, 
+    rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--color-white);
+}
+
+/*****************************
+          Main
+*****************************/
+.main {
+  margin-top: 11rem;
+  margin-bottom: 11rem;
+}
+
+/* contact info */
+.contact__info--card {
+  padding: 5rem 3rem;
+  text-align: center;
+  transition: all .3s;
+}
+
+.contact__info--card:hover {
+  transform: translateY(-2rem);
+}
+
+.contact__info [class*="col-"] {
+  margin: 1.5rem;
+}
+
+.contact__info--icon {
+  display: block;
+  margin: 2rem;
+  color: var(--color-primary);
+}
+
+.Contact__info--link:link,
+.Contact__info--link:visited {
+  color: var(--color-black);
+}
+
+.Contact__info--link:hover {
+  color: var(--color-secondary);
+}
+
+/* contact form */
+.contact__form {
+  margin-top: 8rem;
+}
+
+.contact__form input,
+.contact__form textarea,
+.contact__form button {
+  font-size: inherit;
+}
+
+.contact__form .form-group {
+  margin-bottom: 2rem;
+}
+
+.contact__form .btn {
+  width: 100%;
+  background: var(--color-primary);
+  color: var(--color-white);
+  transition: background .4s;
+}
+
+.contact__form .btn:hover {
+  background: var(--color-secondary);
+}

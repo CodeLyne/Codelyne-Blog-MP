@@ -1,0 +1,83 @@
+/*****************************
+          Variables
+*****************************/
+:root {
+  /* colors */
+  --color-primary: #aa5c6c;
+  --color-secondary: #c28893;
+
+  --color-black: #1a1a1a;
+  --color-white: #ffffff;
+
+  /* font */
+  --font-stack-1: 'Philosopher', sans-serif;
+  --font-stack-2: 'Poppins', sans-serif;
+}
+
+/*****************************
+          CSS reset
+*****************************/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* 62.5% is approximately 10px */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font-stack-2);
+  font-size: 2rem;
+}
+
+/*****************************
+          Main
+*****************************/
+.main {
+  width: 100%;
+  height: 100vh;
+  color: var(--color-white);
+
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0.822)),
+    url(../images/cosmetic-4813273_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main__content {
+  max-width: 47rem;
+}
+
+.main__content--btn:link,
+.main__content--btn:visited {
+  background: var(--color-primary);
+  font-size: inherit;
+  color: var(--color-white);
+  transition: all .4s;
+  transform: translateY(0);
+}
+
+.main__content--btn:hover {
+  background: var(--color-secondary);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.767);
+}
+
+.main__content--btn:active,
+.main__content--btn:focus {
+  outline: none;
+  transform: translateY(3px);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.767);
+}
+
+.main__content--heading {
+  font-family: var(--font-stack-1);
+  font-size: 15rem;
+  font-weight: 700;
+}
